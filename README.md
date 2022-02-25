@@ -39,7 +39,7 @@ faten alsahli
 
 # Screenshot:
 
-HR category :
+# HR category :
 
 1- Home Page :
 
@@ -66,7 +66,7 @@ HR category :
 <img width="1498" alt="Screen Shot 1443-07-24 at 10 19 37 PM" src="https://user-images.githubusercontent.com/97634511/155775562-e9f04eee-f9c3-4576-9b31-b3198f1e0c1a.png">
 
 
-2- Send Welcome Email To New Users :
+# Send Welcome Email To New Users :
 
 1- Preview Page (HTML)
 
@@ -83,6 +83,12 @@ HR category :
 <img width="979" alt="Screen Shot 1443-07-24 at 10 08 46 PM" src="https://user-images.githubusercontent.com/97634511/155778752-772fd8b7-e5a4-4278-9309-fa67d96e8008.png">
 
 
+# profile picture for users :
 
+
+<img width="466" alt="Screen Shot 1443-07-25 at 1 16 54 AM" src="https://user-images.githubusercontent.com/97634511/155811378-ba000df9-277f-42a4-b31d-5cdec6b5708a.png">
+
+
+<img width="457" alt="Screen Shot 1443-07-24 at 11 01 04 PM" src="https://user-images.githubusercontent.com/97634511/155811278-fc267d87-787d-4faa-be0f-f16ff343c7e6.png">
 
 
