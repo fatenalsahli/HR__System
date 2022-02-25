@@ -1,0 +1,50 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Targets</h1>
+
+<div class="container">
+
+<a href="/targets/new">
+<span style="font-size: 48px; color: Dodgerblue;" class="d-block mt-3">
+<i class="fas fa-plus-circle"></i>
+</span>
+</a>
+
+<table class="table">
+  <thead class="thead-dark">
+      <tr>
+       <th>Title</th>
+        <th>Description</th>
+        <th>Start date</th>
+        <th>Finish</th>
+        <th>Status</th>
+         <th>Team</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+     <% @targets.each do |targets| %>
+      <tr>
+        <td> <%=targets.title%></td>
+        <td><%=targets.description%></td>
+        <td><%=targets.start_date%></td>
+        <td><%=targets.finish_date%></td>
+        <td><%=targets.status%></td>
+        <td><%=targets.team_id%></td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+  
+         <td><%= link_to 'new', new_target_path(targets)%></td>
+        <td><%= link_to 'Edit', edit_target_path(targets)%></td>
+        <td><%= link_to 'Destroy', targets, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+ 
+ <a href="/" class="mt-5">&#8592; Back to Home</a>
+    <%= link_to 'new', new_target_path(@targets)%>
+
+</div>

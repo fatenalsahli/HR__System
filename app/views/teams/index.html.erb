@@ -1,0 +1,46 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Teams</h1>
+
+<div class="container">
+
+<a href="/teams/new">
+<span style="font-size: 48px; color: Dodgerblue;" class="d-block mt-3">
+<i class="fas fa-plus-circle"></i>
+</span>
+</a>
+
+<table class="table">
+  <thead class="thead-dark">
+      <tr>
+       <th>Name</th>
+        <th>Description</th>
+        <th>Leader</th>
+        <th>Division Id</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+     <% @teams.each do |teams| %>
+      <tr>
+        <td> <%=teams.name%></td>
+        <td><%=teams.description%></td>
+        <td><%=teams.leader_id%></td>
+        <td><%=teams.division_id%></td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+  
+         <td><%= link_to 'new', new_team_path(teams)%></td>
+        <td><%= link_to 'Edit', edit_team_path(teams)%></td>
+        <td><%= link_to 'Destroy', teams, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+ 
+ <a href="/" class="mt-5">&#8592; Back to Home</a>
+  <%= link_to 'new', new_team_path(@teams)%>
+
+</div>

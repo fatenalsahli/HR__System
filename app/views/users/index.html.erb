@@ -1,0 +1,43 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Users</h1>
+
+<div class="container">
+
+<a href="/users/new">
+<span style="font-size: 48px; color: Dodgerblue;" class="d-block mt-3">
+<i class="fas fa-plus-circle"></i>
+</span>
+</a>
+
+<table class="table">
+  <thead class="thead-dark">
+      <tr>
+       <th>Email</th>
+        <th>Name</th>
+        <th>Password</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+     <% @users.each do |users| %>
+      <tr>
+        <td><%=users.email%></td>
+        <td><%=users.name%></td>
+        <td><%=users.password%></td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+  
+         <td><%= link_to 'new', new_user_path(users)%></td>
+        <td><%= link_to 'Edit', edit_user_path(users)%></td>
+        <td><%= link_to 'Destroy', users, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+ 
+ <a href="/" class="mt-5">&#8592; Back to Home</a>
+ <%= link_to 'new', new_user_path(@users)%>
+</div>

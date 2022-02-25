@@ -1,0 +1,45 @@
+<div class="container">
+<h1>Employees</h1>
+
+</span>
+</a>
+
+<table class="table">
+  <thead class="thead-dark">
+      <tr>
+       <th>ID</th>
+         <th>Team ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Job</th>
+        <th>Salary</th>
+        <th>Employment Status</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+     <% @employees.each do |employee| %>
+      <tr>
+        <td><%=employee.id%></td>
+        <td><%=employee.team_id%></td>
+        <td><%=employee.name%></td>
+        <td><%=employee.email%></td>
+        <td><%=employee.job%></td>
+        <td><%=employee.salary%></td>
+        <td><%=employee.employment_status%></td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+  
+         <td><%= link_to 'new', new_employee_path(employee)%></td>
+        <td><%= link_to 'Edit', edit_employee_path(employee)%></td>
+        <td><%= link_to 'Destroy', employee, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+ 
+ <a href="/" class="mt-5">&#8592; Back to Home</a>
+ <%= link_to 'new', new_employee_path(@employees)%>
+</div>
