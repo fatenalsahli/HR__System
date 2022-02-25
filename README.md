@@ -66,5 +66,23 @@ HR category :
 <img width="1498" alt="Screen Shot 1443-07-24 at 10 19 37 PM" src="https://user-images.githubusercontent.com/97634511/155775562-e9f04eee-f9c3-4576-9b31-b3198f1e0c1a.png">
 
 
+2- Send Welcome Email To New Users :
+
+1- Preview Page (HTML)
+
+<img width="725" alt="Screen Shot 1443-07-24 at 10 10 52 PM" src="https://user-images.githubusercontent.com/97634511/155776543-4355efe5-395b-44ed-aca9-d45ad6223ceb.png">
+
+2- Preview Page (TEXT)
+
+
+<img width="510" alt="Screen Shot 1443-07-24 at 10 10 57 PM" src="https://user-images.githubusercontent.com/97634511/155776830-d4c74f7b-8948-4b6a-883e-30cddec6d748.png">
+
+
+3- Send Email Useing (Mailhog)
+
+<img width="979" alt="Screen Shot 1443-07-24 at 10 08 46 PM" src="https://user-images.githubusercontent.com/97634511/155778752-772fd8b7-e5a4-4278-9309-fa67d96e8008.png">
+
+
+
 
 
