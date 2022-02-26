@@ -91,4 +91,21 @@ faten alsahli
 
 <img width="457" alt="Screen Shot 1443-07-24 at 11 01 04 PM" src="https://user-images.githubusercontent.com/97634511/155811278-fc267d87-787d-4faa-be0f-f16ff343c7e6.png">
 
+# create basic authentication for login and register :
+
+1- register :
+
+<img width="1512" alt="Screen Shot 1443-07-25 at 8 48 29 PM" src="https://user-images.githubusercontent.com/97634511/155854049-a0855ea5-4026-4823-8c98-1ca4107d1be8.png">
+
+2- Login :
+
+<img width="1508" alt="Screen Shot 1443-07-25 at 8 49 04 PM" src="https://user-images.githubusercontent.com/97634511/155854068-213eb488-83df-40f5-9e53-710786aad429.png">
+
+3- Logout :
+
+<img width="1508" alt="Screen Shot 1443-07-25 at 8 48 54 PM" src="https://user-images.githubusercontent.com/97634511/155854077-5c974404-142b-47e4-83c7-5d3bfb36c814.png">
+
+
+
+
 
