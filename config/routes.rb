@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :myusers
   get 'home/index'
   resources :targets
   resources :divisions
