@@ -106,6 +106,12 @@ faten alsahli
 <img width="1508" alt="Screen Shot 1443-07-25 at 8 48 54 PM" src="https://user-images.githubusercontent.com/97634511/155854077-5c974404-142b-47e4-83c7-5d3bfb36c814.png">
 
 
+# Add multiple languages to HR system :
+
+
+https://user-images.githubusercontent.com/97634511/156670664-000ce8e5-ca92-46e8-943d-9c33e2447d16.MP4
+
+
 
 
 
