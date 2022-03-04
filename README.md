@@ -109,9 +109,7 @@ faten alsahli
 # Add multiple languages to HR system :
 
 
-https://user-images.githubusercontent.com/97634511/156670664-000ce8e5-ca92-46e8-943d-9c33e2447d16.MP4
-
-
+https://user-images.githubusercontent.com/97634511/156761710-81f4e040-8312-44e7-8d09-bad10c489a56.mp4
 
 
 
