@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-    validates :name,:email,:password ,presence: {message: "must be given please"}
+    validates :name,:email,:password ,presence: {}
     validates :name, length: { maximum: 10 , minimum: 3}
     validates :password, length: { in: 6..20 }
     validates :email,:name, uniqueness: { case_sensitive: false }

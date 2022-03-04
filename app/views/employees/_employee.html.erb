@@ -1,27 +1,28 @@
 <div id="<%= dom_id employee %>">
   <p>
-    <strong>Name:</strong>
     <%= employee.name %>
+      <strong>: <%= t('activerecord.attributes.employee.name')%>  </strong>
   </p>
 
   <p>
-    <strong>Email:</strong>
     <%= employee.email %>
+    <strong>: <%= t('activerecord.attributes.employee.email')%>  </strong>
   </p>
 
   <p>
-    <strong>Job:</strong>
     <%= employee.job %>
+     <strong>: <%= t('activerecord.attributes.employee.job')%>  </strong>
   </p>
 
   <p>
-    <strong>Salary:</strong>
     <%= employee.salary %>
+     <strong>: <%= t('activerecord.attributes.employee.salary')%>  </strong>
   </p>
 
   <p>
-    <strong>Employment status:</strong>
     <%= employee.employment_status %>
+         <strong>: <%= t('activerecord.attributes.employee.employment_status')%>  </strong>
+
   </p>
   
 

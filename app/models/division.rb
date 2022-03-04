@@ -1,6 +1,6 @@
 class Division < ApplicationRecord
 
-    validates :teams,:name,:description,:name,presence: {message: "must be given please"}
+    validates :teams,:name,:description,:name,presence: {}
     validates :name,:description,length: { maximum: 100 , minimum: 3}
     validates :name, :description , uniqueness: { case_sensitive: false }
 

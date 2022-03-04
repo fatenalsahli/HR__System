@@ -1,17 +1,18 @@
 <div id="<%= dom_id division %>">
   <p>
-    <strong>Name:</strong>
     <%= division.name %>
+    <strong>:<%= t("activerecord.attributes.division.name") %></strong>
   </p>
 
   <p>
-    <strong>Description:</strong>
     <%= division.description %>
+       <strong>:<%= t("activerecord.attributes.division.description") %></strong>
   </p>
 
   <p>
-    <strong>Manager:</strong>
     <%= division.employee_id %>
+           <strong>:<%= t("activerecord.attributes.division.employee_id") %></strong>
+
   </p>
 
 </div>
