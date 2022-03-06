@@ -9,7 +9,7 @@
   
 
     
-    <%= link_to 'Home', root_path, class:"navbar-brand" %>
+    <%= link_to t('home._header.home'), root_path, class:"navbar-brand" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,26 +19,45 @@
 
 
         <li class="nav-item">
-        <%= link_to 'Show Users', users_path, class:"nav-link"%>
+      
         </li>
 
          <li class="nav-item">
-        <%= link_to 'Show Employees', employees_path, class:"nav-link"%>
+     
         </li>
         <li class="nav-item">
-        <%= link_to 'Show Teams', teams_path, class:"nav-link"%>
         </li>
 
         <li class="nav-item">
-        <%= link_to 'Show Targets', targets_path, class:"nav-link"%>
         </li>
 
         <li class="nav-item">
-        <%= link_to 'Show Divisions', divisions_path, class:"nav-link"%>
         </li>
 
+        <li class="nav-item">
+        </li>
        
-        
+      </ul>
+     </div>
+
+   <ul class="navbar-nav ml-auto">
+ <% if myuser_signed_in? %>
+      <li class="nav-item">
+           <%= button_to t('sign-out'), destroy_myuser_session_path , method: :delete ,class: 'nav-link' %>
+     </li>
+
+      <% else %>
+    <li class="nav-item">
+         <%= link_to t('Register'), new_myuser_registration_path , class: 'nav-link' %>
+    </li>
+
+    <li class="nav-item">
+        <%= link_to  t('log-in'), new_myuser_session_path , class: 'nav-link' %>
+        </li>
+
+      <% end %>
+    
+
       </ul>
     </div>
   </div>

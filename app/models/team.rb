@@ -1,6 +1,6 @@
 class Team < ApplicationRecord
 
-    validates :name,:description,:leader_id,presence: {message: "must be given please"}
+    validates :name,:description,:leader_id,presence: {}
     validates :name,:description,length: { maximum: 100 , minimum: 3}
     validates :name,uniqueness: { case_sensitive: false }
 

@@ -1,17 +1,24 @@
 <div id="<%= dom_id user %>">
-  <p>
-    <strong>Email:</strong>
-    <%= user.email %>
+
+ <p>
+    <strong> <%= t 'activerecord.attributes.user.profile_picture'%> </strong>
   </p>
 
   <p>
-    <strong>Name:</strong>
+  <%= user.email %>
+    <strong> : <%= t 'activerecord.attributes.user.email'%> </strong>
+  
+  </p>
+
+  <p>
     <%= user.name %>
+    <strong>: <%= t 'activerecord.attributes.user.name'%> </strong>
+  
   </p>
 
   <p>
-    <strong>Password:</strong>
     <%= user.password %>
+     <strong>: <%= t 'activerecord.attributes.user.password'%></strong>
   </p>
 
 </div>
