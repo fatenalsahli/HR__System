@@ -28,5 +28,5 @@
 - Change the language from English to Arabic
 
 # Video Of HR system :
-
+https://drive.google.com/file/d/1ToAqKkiUGvECAA9J_FP_w2p2vgM7dGP7/view
 
