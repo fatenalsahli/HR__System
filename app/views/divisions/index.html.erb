@@ -1,5 +1,5 @@
 <div class="container">
-<h1>Divisions</h1>
+<h1> <%=t("activerecord.attributes.division.divisions")%></h1>
 
 </span>
 </a>
@@ -7,11 +7,11 @@
 <table class="table">
   <thead class="thead-dark">
       <tr>
-       <th>ID</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Teams</th>
-        <th>Manager</th>
+       <th> <%= t("activerecord.attributes.division.IDdivision") %> </strong> </th>
+        <th><%= t("activerecord.attributes.division.name") %></th>
+        <th><%= t("activerecord.attributes.division.description") %></th>
+        <th><%= t("activerecord.attributes.division.teams") %></th>
+        <th> <%= t("activerecord.attributes.division.employee_id") %></th>
         <th></th>
         <th></th>
         <th></th>
@@ -24,11 +24,12 @@
         <td><%=division.name%></td>
         <td><%=division.description%></td>
         <td><%= division.teams.collect(&:name).join(',') %></td>
-
         <td><%=division.employee_id%></td>
-        <td><%= link_to 'new', new_division_path(division)%></td>
-        <td><%= link_to 'Edit', edit_division_path(division)%></td>
-        <td><%= link_to 'Destroy', division, :confirm => 'Are you sure?', :method => :delete %></td>
+
+
+        <td>  <%= link_to t("activerecord.attributes.division.Showdivision")  , (division) %></td>
+        <td><%= link_to t("activerecord.attributes.division.Editdivision")  , edit_division_path(division)%></td>
+        <td><%= link_to t('Destroy'), division, :confirm => 'Are you sure?', :method => :delete %></td>
 
 
       </tr>
@@ -36,7 +37,9 @@
     
     </tbody>
   </table>
-   <a href="/" class="mt-5">&#8592; Back to Home</a>
+    <%= link_to t('new'), new_division_path(@divisions)%>
+    <br>
+   <a href="/" class="mt-5">&#8592; <%= t 'Back to Home'%></a>
  
-  <%= link_to 'new', new_division_path(@divisions)%>
+
 </div>

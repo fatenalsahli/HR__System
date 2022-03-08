@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-large" style="height:33% , border: solid 1px lightgrey; ">
+  <a class="w3-bar-item w3-button w3-hover-black" <%= link_to t('home._header.home'), root_path, class:"navbar-brand" %></a>
+  <a  class="w3-bar-item w3-button w3-hover-black" <%= link_to t('user.index.Users') , users_path, class:"nav-link"%></a>
+  <a  class="w3-bar-item w3-button w3-hover-black"<%= link_to t('employee.index.Employees'), employees_path, class:"nav-link"%></a>
+  <a  class="w3-bar-item w3-button w3-hover-black" <%= link_to t('Team.index.Teams'), teams_path, class:"nav-link"%></a>
+  <a class="w3-bar-item w3-button w3-hover-black"<%= link_to  t("activerecord.attributes.target.targets"), targets_path, class:"nav-link"%></a>
+  <a class="w3-bar-item w3-button w3-hover-black"<%= link_to t("activerecord.attributes.division.divisions"), divisions_path, class:"nav-link"%> </a>
+  <a class="w3-bar-item w3-button w3-hover-black"<%= link_to t("hoem.index.Teams details") ,  hoem_index_path, class:"nav-link"%></a>
+</div>
+
+<div style="margin-left:20%">
+
+<div class="w3-container w3-dark-grey">
+</div>
+
+<div class="w3-container">
+
+</div>
+      
+</body>
+</html>
+

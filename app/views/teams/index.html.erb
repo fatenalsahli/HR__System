@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Teams</h1>
+<h1> <%= t 'Team.index.Teams'%> </h1>
 
 <div class="container">
 
@@ -13,10 +13,10 @@
 <table class="table">
   <thead class="thead-dark">
       <tr>
-       <th>Name</th>
-        <th>Description</th>
-        <th>Leader</th>
-        <th>Division Id</th>
+       <th> <%= t 'activerecord.attributes.team.name'%>  </th>
+        <th> <%= t 'activerecord.attributes.team.description'%> </th>
+        <th> <%= t 'activerecord.attributes.team.leader_id'%> </th>
+        <th><%= t 'activerecord.attributes.team.division_id'%> </th>
         <th></th>
         <th></th>
       </tr>
@@ -32,15 +32,16 @@
         <td> </td>
         <td> </td>
   
-         <td><%= link_to 'new', new_team_path(teams)%></td>
-        <td><%= link_to 'Edit', edit_team_path(teams)%></td>
-        <td><%= link_to 'Destroy', teams, :confirm => 'Are you sure?', :method => :delete %></td>
+        <td>  <%= link_to t("Team.index.showt"), (teams) %></td>
+        <td><%= link_to t("Team.index.editteam"), edit_team_path(teams)%></td>
+        <td><%=link_to t('Destroy'),  teams, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
     <% end %>
     </tbody>
   </table>
  
- <a href="/" class="mt-5">&#8592; Back to Home</a>
-  <%= link_to 'new', new_team_path(@teams)%>
-
+ <%= link_to t('new') , new_team_path(@teams)%>
+<br>
+ <a href="/" class="mt-5">&#8592; <%= t 'Back to Home'%> </a>
+ <br>
 </div>

@@ -1,10 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
+<%= image_tag @user.cover , size:'150x150' %>
+
 <%= render @user %>
 
 <div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
-
-  <%= button_to "Destroy this user!", @user, method: :delete %>
+<%= link_to t("activerecord.attributes.user.edituser") , @user %> |
+<%= link_to t("activerecord.attributes.user.backuser") , users_path %>
+<br>
+  <%= button_to t('Destroy'), @user, method: :delete %>
+  <br>
 </div>

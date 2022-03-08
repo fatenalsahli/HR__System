@@ -1,0 +1,40 @@
+<p style="color: green"><%= notice %></p>
+
+<h1><%= t 'hoem.index.Teams details'%>  </h1>
+
+<div class="container">
+
+<a href="/teams/new">
+<span style="font-size: 48px; color: Dodgerblue;" class="d-block mt-3">
+<i class="fas fa-plus-circle"></i>
+</span>
+</a>
+
+<table class="table">
+  <thead class="thead-dark">
+      <tr>
+       <th> <%= t 'hoem.index.Name'%>  </th>
+        <th> <%= t 'hoem.index.Team members'%></th>
+        <th><%= t 'hoem.index.Teams'%></th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <% @teams.each do |teams| %>
+        <td> <%=teams.name%></td>
+       
+       <td>  <%= link_to t('hoem.index.Team members') , (employees_url) %></td>
+
+       <td>  <%= link_to t('hoem.index.Teams details') , (teams) %></td>
+      <td></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+
+ <a href="/" class="mt-5">&#8592; <%= t 'Back to Home'%> </a>
+
+
+</div>

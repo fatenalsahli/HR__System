@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Users</h1>
+<h1> <%= t 'user.index.Users'%> </h1>
 
 <div class="container">
 
@@ -13,9 +13,9 @@
 <table class="table">
   <thead class="thead-dark">
       <tr>
-       <th>Email</th>
-        <th>Name</th>
-        <th>Password</th>
+       <th> <%= t 'user.index.Email'%> </th>
+        <th><%= t 'user.index.Name'%></th>
+        <th><%= t 'user.index.Password'%></th>
         <th></th>
         <th></th>
       </tr>
@@ -30,14 +30,16 @@
         <td> </td>
         <td> </td>
   
-         <td><%= link_to 'new', new_user_path(users)%></td>
-        <td><%= link_to 'Edit', edit_user_path(users)%></td>
-        <td><%= link_to 'Destroy', users, :confirm => 'Are you sure?', :method => :delete %></td>
+        <td> <%= link_to t("activerecord.attributes.user.showuser") , (users) %></td>
+        <td><%= link_to t("activerecord.attributes.user.edituser"), edit_user_path(users)%></td>
+          <td><%= link_to t('Destroy'), users, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
     <% end %>
     </tbody>
   </table>
  
- <a href="/" class="mt-5">&#8592; Back to Home</a>
- <%= link_to 'new', new_user_path(@users)%>
+  <%= link_to t('new') , new_user_path(@users)%>
+<br>
+ <a href="/" class="mt-5">&#8592; <%= t 'Back to Home'%> </a>
+ <br>
 </div>
