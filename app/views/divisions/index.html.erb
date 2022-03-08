@@ -27,9 +27,9 @@
         <td><%=division.employee_id%></td>
 
 
-        <td>  <%= link_to t("activerecord.attributes.division.Showdivision")  , (division) %></td>
-        <td><%= link_to t("activerecord.attributes.division.Editdivision")  , edit_division_path(division)%></td>
-        <td><%= link_to t('Destroy'), division, :confirm => 'Are you sure?', :method => :delete %></td>
+        <td> <%= link_to t("activerecord.attributes.division.Show division")  , (division) , class:"btn btn-dark"  %></td>
+        <td><%= link_to t("activerecord.attributes.division.Edit division")  , edit_division_path(division) , class:"btn btn-dark"  %></td>
+        <td><%= link_to t('Destroy'), division, :confirm => 'Are you sure?', :method => :delete  , class:"btn btn-dark"  %></td>
 
 
       </tr>
@@ -37,9 +37,9 @@
     
     </tbody>
   </table>
-    <%= link_to t('new'), new_division_path(@divisions)%>
-    <br>
-   <a href="/" class="mt-5">&#8592; <%= t 'Back to Home'%></a>
+    <%= link_to t('new'), new_division_path(@divisions) , class:"btn btn-dark"%>
+    <br><br>
+   <a href="/" class="btn btn-dark">&#8592; <%= t 'Back to Home'%></a>
  
 
 </div>

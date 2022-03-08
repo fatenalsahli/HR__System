@@ -36,17 +36,17 @@
         <td> </td>
         <td> </td>
   
-        <td>  <%= link_to t("activerecord.attributes.target.targetshow") , (targets) %></td>
-        <td><%= link_to t("activerecord.attributes.target.edittarget"), edit_target_path(targets)%></td>
-        <td><%= link_to t('Destroy'), targets, :confirm => 'Are you sure?', :method => :delete %></td>
+        <td>   <%= link_to t("activerecord.attributes.target.show target") , (targets) , class:"btn btn-dark" %> </td>
+        <td>   <%= link_to t("activerecord.attributes.target.edit target"), edit_target_path(targets) , class:"btn btn-dark" %> </td>
+        <td>  <%= link_to t('Destroy'), targets, :confirm => 'Are you sure?', :method => :delete  , class:"btn btn-dark" %> </td>
       </tr>
     <% end %>
     </tbody>
   </table>
 
 
- <%= link_to t('new') , new_target_path(@tragets)%>
-<br>
- <a href="/" class="mt-5">&#8592; <%= t 'Back to Home'%> </a>
+ <%= link_to t('new') , new_target_path(@tragets), class:"btn btn-dark"%>
+<br><br>
+ <a href="/" class="btn btn-dark">&#8592; <%= t 'Back to Home'%> </a>
  <br>
 </div>

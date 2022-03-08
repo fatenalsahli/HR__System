@@ -41,6 +41,6 @@
   <%= form.select :team_id,Team.all.pluck(:name,:id),{prompt:'Team'},{class: "form-control"}%>
   </div>
 
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-dark" %>
   </div>
 <% end %>

@@ -1,3 +1,14 @@
 en:
-  Welcome: "Hello world"
+  Welcome: "Welcome to HR system"
+  Register: "Register"
+  login: "Log in"
+  sign-out: "Sign out  "
+  Change your password: "Change your password"
+  Forgot your password: "Forgot your password"
+  remember me:  "remeber me "
+  Email: "Email"
+  password: "Password"
+  password conformation: "Password conformation"
+  en: "English"
+  ar: "Arabic"
   

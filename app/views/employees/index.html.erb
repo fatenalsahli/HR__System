@@ -32,15 +32,15 @@
         <td> </td>
         <td> </td>
         <td> </td>
-        <td>  <%= link_to  t('activerecord.attributes.employee.showemp'), (employee) %></td>
-        <td><%= link_to t('activerecord.attributes.employee.editemp') , edit_employee_path(employee)%></td>
-        <td><%= link_to t('Destroy'), employee, :confirm => 'Are you sure?', :method => :delete %></td>
+        <td>    <%= link_to  t('activerecord.attributes.employee.show employee'), (employee) , class:"btn btn-dark" %></td></a>
+        <td>  <%= link_to t('activerecord.attributes.employee.edit employee') , edit_employee_path(employee) , class:"btn btn-dark"%></td>
+        <td>  <%= link_to t('Destroy'), employee, :confirm => 'Are you sure?', :method => :delete , class:"btn btn-dark"  %></td>
       </tr>
     <% end %>
     </tbody>
   </table>
- <%= link_to t('new'), new_employee_path(@employees)%>
- <br>
- <a href="/" class="mt-5">&#8592; <%= t 'Back to Home'%></a>
+  <%= link_to t('new'), new_employee_path(@employees) , class:"btn btn-dark" %>
+ <br><br>
+ <a href="/" class="btn btn-dark">&#8592; <%= t 'Back to Home'%></a>
  
 </div>
