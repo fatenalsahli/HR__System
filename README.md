@@ -116,3 +116,38 @@ https://user-images.githubusercontent.com/97634511/156761710-81f4e040-8312-44e7-
 
 <img width="1512" alt="Screen Shot 1443-08-03 at 11 34 39 PM" src="https://user-images.githubusercontent.com/97634511/156941157-dbaa8308-40d1-4f15-99af-60d92cee83eb.png">
 
+
+# update UI with Bootstrap. 
+
+The video shows all the features of the HR system:
+
+- Add user
+- Add an employee
+- Add a team
+- Add a section
+- Add goals
+
+- Edit user
+- Edit employee
+- Edit the team
+- Edit Division
+- target adjustment
+
+- Update user
+- Update employee
+- Update the team
+- Update Division
+- Update adjustment
+
+
+- Register a new user
+- User logout
+- User login
+
+- Change the language from English to Arabic
+
+# Video Of HR system :
+
+https://drive.google.com/file/d/1ToAqKkiUGvECAA9J_FP_w2p2vgM7dGP7/view?usp=sharing
+
+
