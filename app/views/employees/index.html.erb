@@ -9,7 +9,7 @@
   <thead class="thead-dark">
       <tr>
        <th>  <%= t 'employee.index.ID'%> </th>
-        <th> <%= t 'activerecord.attributes.team.name'%> </th>
+        <th> <%= t 'activerecord.attributes.team.team'%> </th>
         <th> <%= t 'activerecord.attributes.employee.name'%> </th>
         <th> <%= t 'activerecord.attributes.employee.email'%> </th>
         <th> <%= t 'activerecord.attributes.employee.job'%> </th>
@@ -33,7 +33,7 @@
         <td> </td>
         <td> </td>
         <td>    <%= link_to  t('activerecord.attributes.employee.show employee'), (employee) , class:"btn btn-dark" %></td></a>
-        <td>  <%= link_to t('activerecord.attributes.employee.edit employee') , edit_employee_path(employee) , class:"btn btn-dark"%></td>
+        <td>  <%= link_to t('activerecord.attributes.employee.edit employee') , edit_employee_path(employee) , class:"btn btn-dark"%></td></a>
         <td>  <%= link_to t('Destroy'), employee, :confirm => 'Are you sure?', :method => :delete , class:"btn btn-dark"  %></td>
       </tr>
     <% end %>
