@@ -3,9 +3,9 @@
 one:
   name: MyString
   description: MyString
-  team_lead: MyString
+  #team_lead: MyString
 
 two:
   name: MyString
   description: MyString
-  team_lead: MyString
+  #team_lead: MyString
