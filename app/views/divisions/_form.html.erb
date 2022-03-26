@@ -1,7 +1,7 @@
 <%= form_with(model: division) do |form| %>
   <% if division.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(division.errors.count, "error") %> prohibited this division from being saved:</h2>
+       <h2> <%= t 'globals.forms.messages.errors.multiple errors', count: division.errors.count %> </h2>
 
       <ul>
         <% division.errors.each do |error| %>
@@ -22,7 +22,7 @@
   </div>
   
   <div>
-    <%= form.label "Manager ", style: "display: block" %>
+    <%= form.label :employee_id, style: "display: block" %>
     <%= form.select :employee_id,Employee.all.pluck(:name,:id),{prompt:'Manager'},{class: "form-control"}%>
   </div>
 
@@ -35,10 +35,10 @@
   
 
  <div>
-    <%= form.label "Teams", style: "display: block" %>
+    <%= form.label :teams , style: "display: block" %>
    <%# <%= form.select :teams, Team.all.collect { |team| ["##{team.id}", team] },{:include_hidden => false},{ :multiple => true, class: 'selectpicker'} %> 
-   <%= form.select :teams, Team.all.collect{ |team| [team.name,team.id] },{:include_hidden => false, selected: @division.teams.map(&:id)},{ :multiple => true, :class => 'p-1 pr-5'} %> 
-  </div>
+   <%= form.select :teams , Team.all.collect{ |team| [team.name,team.id] },{:include_hidden => false, selected: @division.teams.map(&:id)},{ :multiple => true, :class => 'p-1 pr-5'} %> 
+  </div> 
 
  <!--  <div>
 

@@ -1,9 +1,9 @@
-<h1>New target</h1>
+<h1><%= t 'target.index.New target'%> </h1>
 
 <%= render "form", target: @target %>
 
 <br>
 
 <div>
-  <%= link_to "Back to targets", targets_path %>
+  <%= link_to  t("activerecord.attributes.target.backtarget") , targets_path %>
 </div>

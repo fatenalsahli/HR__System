@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :myusers
   get 'home/index'
   resources :targets
   resources :divisions
@@ -12,5 +13,5 @@ Rails.application.routes.draw do
 
   get 'home/index'
   root :to => "home#index"
-  
+  get 'hoem/index'
 end
