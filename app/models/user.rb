@@ -6,4 +6,5 @@ class User < ApplicationRecord
     validates :email,:name, uniqueness: { case_sensitive: false }
     validates :email, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/ }
 
+     has_one_attached :cover 
 end
