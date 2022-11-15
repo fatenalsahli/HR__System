@@ -29,10 +29,11 @@
         <td> </td>
         <td> </td>
         <td> </td>
-  
+ 
         <td>  <%= link_to  t("activerecord.attributes.user.show user") , (users) , class:"btn btn-dark" %></td>
         <td>  <%= link_to t("activerecord.attributes.user.edit user"), edit_user_path(users) , class:"btn btn-dark"%> </td>
         <td>  <%= link_to t('Destroy'), users, :confirm => 'Are you sure?', :method => :delete , class:"btn btn-dark" %></td>
+
       </tr>
     <% end %>
     </tbody>
