@@ -9,13 +9,12 @@ ar:
   Change your password: "تغيير الرقم السري"
   Forgot your password: "نسيان الرقم السري"
   remember me:  "تذكرني"
+
   Email: "الايميل"
   password: "الرقم السري"
   password conformation: "تأكيد الرقم السري"
   Copyright: "حقوق النشر ٢٠٢٢ سبرنت - المؤلف فاتن السهلي "
   Send me reset password instructions: "ارسال تعليمات استعادة الرقم السري الى الايميل"
-
-
 
   en: "انجليزية"
   ar: "العربية"
@@ -96,7 +95,6 @@ ar:
         edit user: "تعديل بيانات المستخدم"
         back to users: "العودة الى المستخدمين"
         show user: "عرض بيانات المستخدم"
-
 #####################################
       target:
         title: "العنوان"
