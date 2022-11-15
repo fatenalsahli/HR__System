@@ -34,6 +34,7 @@
         <td> </td>
         <td>  <%= link_to  t('activerecord.attributes.employee.showemp'), (employee) %></td>
          <td><%= link_to t('new'), new_employee_path(employee)%></td>
+
         <td><%= link_to t('activerecord.attributes.employee.editemp') , edit_employee_path(employee)%></td>
         <td><%= link_to t('Destroy'), employee, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>

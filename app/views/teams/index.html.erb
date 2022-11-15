@@ -34,6 +34,7 @@
   
         <td>  <%= link_to t("Team.index.showt"), (teams) %></td>
          <td><%= link_to t("new"), new_team_path(teams)%></td>
+
         <td><%= link_to t("Team.index.editteam"), edit_team_path(teams)%></td>
         <td><%=link_to t('Destroy'),  teams, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
