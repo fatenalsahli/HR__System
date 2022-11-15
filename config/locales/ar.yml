@@ -1,0 +1,138 @@
+ar: 
+  Welcome: "مرحبا بك في موقع الموارد البشرية"
+  Back to Home: "العودة الى الصفحة الرىيسية"
+  new: "اضافة"
+  Destroy: "حذف"
+  Register: " تسجيل جديد"
+  log-in: "تسجيل دخول"
+  sign-out: "تسجيل خروج"
+  Changeyourpassword: "تغيير الرقم السري"
+  Forgotyourpassword: "نسيان الرقم السري"
+  rememberme:  "تذكرني"
+  user:
+    index:
+        Users: "المستخدمين"
+        New user: "مستخدم جديد"
+        Email: "الايميل"
+        Name: "الاسم"
+        Password: "الرقم السري"
+        show: "عرض الموظف"
+        edit: "تعديل بيانات الموظف"
+        back: "العودة الى الموظفين"
+        Passwordc: "تأكيد الرقم السري"
+
+  employee:
+    index:
+        Employees: "الموظفين"
+        New employee: "موظف جديد"
+        ID: "رقم الموظف"
+        Team ID: "رقم الفريق"
+        Name: "اسم الموظف"
+  Team:
+    index:
+        Teams: "الفرق"
+        editteam: "تعديل بيانات الفريق"
+        showt: "عرض الفريق"
+        backt: "العودة الى الفرق"
+
+
+
+  team:
+    index:
+        New team: "فريق جديد"
+  target:
+      index:
+          New target: "هدف جديد"
+  division:
+      index:
+          New division: "قسم جديد"
+  hoem:
+      index:
+          Teams details: "تفاصيل الفريق"
+          Name: "اسم الفريق"
+          Team members: "اعضاء الفريق"
+          Teams: "الفريق"
+
+  home:
+    _header:
+        home: "الصفحة الرئيسية "
+
+  activerecord:
+    attributes:
+      team:
+        name: "اسم الفريق"
+        description: "وصف الفريق"
+        leader_id: "القائد"
+        division_id: "القسم"
+###################################
+      employee:
+        name: "اسم الموظف"
+        email: "ايميل الموظف"
+        job: "الوظيفة"
+        salary: "الراتب"
+        employment_status: "حالة الموظف"
+        team_id: " اسم الفريق"
+        editemp: "تعديل بيانات الموظف"
+        backemp: "العودة الى الموظفين"
+        showemp: "عرض بيانات الموظف"
+####################################
+      user:
+        name: "اسم المستخدم"
+        email: "ايميل المستخدم"
+        password: "رقم السري"
+        profile_picture: "صورة العرض"
+        index:
+        New user: "مستخدم جديد"
+#####################################
+      target:
+        title: "العنوان"
+        description: "وصف الهدف "
+        start_date: "تاريخ البداية "
+        finish_date: "تاريخ النهاية "
+        status: "حالة الهدف"
+        team_id: "اسم الفريق"
+        targets: "الاهداف"
+        edittarget: "تعديل الهدف"
+        backtarget: "العودة الى الاهداف"
+        targetshow: "عرض الهدف"
+#####################################
+      division:
+        name: " اسم القسم"
+        description: "وصف القسم "
+        employee_id: "المدير "
+        finish_date: "تاريخ النهاية "
+        status: "حالة الهدف"
+        teams: "اسم الفريق"
+        divisions: "الاقسام"
+        IDdivision: "رقم القسم"
+        Showdivision: "عرض القسم"
+        Editdivision: "تعديل بيانات القسم"
+        backdivision: "العودة الى الاقسام"
+
+##################################
+  globals:
+          forms: 
+                 messages: 
+                         errors: 
+                                one error: "يوجد خطأ  "
+                                multiple errors: "%{count} يوجد العديد من الاخطاء "
+
+        
+
+       
+
+
+
+   
+
+ 
+    
+
+
+
+
+
+
+
+
+

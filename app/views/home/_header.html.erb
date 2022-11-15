@@ -9,7 +9,7 @@
   
 
     
-    <%= link_to 'Home', root_path, class:"navbar-brand" %>
+    <%= link_to t('home._header.home'), root_path, class:"navbar-brand" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,39 +19,44 @@
 
 
         <li class="nav-item">
-        <%= link_to 'Users', users_path, class:"nav-link"%>
+        <%= link_to t('user.index.Users') , users_path, class:"nav-link"%>
         </li>
 
          <li class="nav-item">
-        <%= link_to 'Employees', employees_path, class:"nav-link"%>
+        <%= link_to t('employee.index.Employees'), employees_path, class:"nav-link"%>
         </li>
         <li class="nav-item">
-        <%= link_to 'Teams', teams_path, class:"nav-link"%>
+        <%= link_to t('Team.index.Teams'), teams_path, class:"nav-link"%>
         </li>
 
         <li class="nav-item">
-        <%= link_to 'Targets', targets_path, class:"nav-link"%>
+        <%= link_to  t("activerecord.attributes.target.targets"), targets_path, class:"nav-link"%>
         </li>
 
         <li class="nav-item">
-        <%= link_to 'Divisions', divisions_path, class:"nav-link"%>
+        <%= link_to t("activerecord.attributes.division.divisions"), divisions_path, class:"nav-link"%>
         </li>
+
+        <li class="nav-item">
+        <%= link_to t("hoem.index.Teams details") ,  hoem_index_path, class:"nav-link"%>
+        </li>
+       
       </ul>
      </div>
 
    <ul class="navbar-nav ml-auto">
  <% if myuser_signed_in? %>
       <li class="nav-item">
-           <%= button_to 'Sign out', destroy_myuser_session_path , method: :delete ,class: 'nav-link' %>
+           <%= button_to t('sign-out'), destroy_myuser_session_path , method: :delete ,class: 'nav-link' %>
      </li>
 
       <% else %>
     <li class="nav-item">
-         <%= link_to 'Register', new_myuser_registration_path , class: 'nav-link' %>
+         <%= link_to t('Register'), new_myuser_registration_path , class: 'nav-link' %>
     </li>
 
     <li class="nav-item">
-        <%= link_to 'Sign in', new_myuser_session_path , class: 'nav-link' %>
+        <%= link_to  t('log-in'), new_myuser_session_path , class: 'nav-link' %>
         </li>
 
       <% end %>

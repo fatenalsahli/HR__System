@@ -1,27 +1,30 @@
 <div id="<%= dom_id target %>">
   <p>
-    <strong>Title:</strong>
     <%= target.title %>
+    <strong> : <%= t("activerecord.attributes.target.title") %> </strong>
+  
   </p>
 
   <p>
-    <strong>Description:</strong>
     <%= target.description %>
+    <strong> : <%= t("activerecord.attributes.target.description") %> </strong>
+
   </p>
 
   <p>
-    <strong>Start date:</strong>
     <%= target.start_date %>
+    <strong> : <%= t("activerecord.attributes.target.start_date") %> </strong>
   </p>
 
   <p>
-    <strong>Finish date:</strong>
     <%= target.finish_date %>
+    <strong> : <%= t("activerecord.attributes.target.finish_date") %> </strong>
   </p>
 
   <p>
-    <strong>Status:</strong>
     <%= target.status %>
+    <strong> : <%= t("activerecord.attributes.target.status") %> </strong>
+
   </p>
 
 </div>

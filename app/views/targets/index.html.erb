@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Targets</h1>
+<h1> <%= t("activerecord.attributes.target.targets")%>  </h1>
 
 <div class="container">
 
@@ -13,12 +13,12 @@
 <table class="table">
   <thead class="thead-dark">
       <tr>
-       <th>Title</th>
-        <th>Description</th>
-        <th>Start date</th>
-        <th>Finish</th>
-        <th>Status</th>
-         <th>Team</th>
+       <th> <%= t("activerecord.attributes.target.title")%> </th>
+        <th> <%= t("activerecord.attributes.target.description")%> </th>
+        <th> <%= t("activerecord.attributes.target.start_date")%> </th>
+        <th><%= t("activerecord.attributes.target.finish_date")%></th>
+        <th><%= t("activerecord.attributes.target.status")%></th>
+         <th><%= t("activerecord.attributes.target.team_id")%></th>
         <th></th>
         <th></th>
       </tr>
@@ -36,16 +36,18 @@
         <td> </td>
         <td> </td>
   
-        <td>  <%= link_to "Show target", (targets) %></td>
-         <td><%= link_to 'new', new_target_path(targets)%></td>
-        <td><%= link_to 'Edit', edit_target_path(targets)%></td>
-        <td><%= link_to 'Destroy', targets, :confirm => 'Are you sure?', :method => :delete %></td>
+        <td>  <%= link_to t("activerecord.attributes.target.targetshow") , (targets) %></td>
+         <td><%= link_to t("new"), new_target_path(targets)%></td>
+        <td><%= link_to t("activerecord.attributes.target.edittarget"), edit_target_path(targets)%></td>
+        <td><%= link_to t('Destroy'), targets, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
     <% end %>
     </tbody>
   </table>
- 
- <a href="/" class="mt-5">&#8592; Back to Home</a>
-    <%= link_to 'new', new_target_path(@targets)%>
 
+
+ <%= link_to t('new') , new_target_path(@tragets)%>
+<br>
+ <a href="/" class="mt-5">&#8592; <%= t 'Back to Home'%> </a>
+ <br>
 </div>

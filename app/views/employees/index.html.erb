@@ -1,5 +1,6 @@
 <div class="container">
-<h1>Employees</h1>
+<h1> <%= t 'employee.index.Employees'%> </h1>
+
 
 </span>
 </a>
@@ -7,13 +8,13 @@
 <table class="table">
   <thead class="thead-dark">
       <tr>
-       <th>ID</th>
-         <th>Team ID</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Job</th>
-        <th>Salary</th>
-        <th>Employment Status</th>
+       <th>  <%= t 'employee.index.ID'%> </th>
+        <th> <%= t 'activerecord.attributes.team.name'%> </th>
+        <th> <%= t 'activerecord.attributes.employee.name'%> </th>
+        <th> <%= t 'activerecord.attributes.employee.email'%> </th>
+        <th> <%= t 'activerecord.attributes.employee.job'%> </th>
+        <th> <%= t 'activerecord.attributes.employee.salary'%></th>
+        <th>  <%= t 'activerecord.attributes.employee.employment_status'%></th>
         <th></th>
         <th></th>
       </tr>
@@ -31,15 +32,16 @@
         <td> </td>
         <td> </td>
         <td> </td>
-        <td>  <%= link_to "Show Employee", (employee) %></td>
-         <td><%= link_to 'new', new_employee_path(employee)%></td>
-        <td><%= link_to 'Edit', edit_employee_path(employee)%></td>
-        <td><%= link_to 'Destroy', employee, :confirm => 'Are you sure?', :method => :delete %></td>
+        <td>  <%= link_to  t('activerecord.attributes.employee.showemp'), (employee) %></td>
+         <td><%= link_to t('new'), new_employee_path(employee)%></td>
+        <td><%= link_to t('activerecord.attributes.employee.editemp') , edit_employee_path(employee)%></td>
+        <td><%= link_to t('Destroy'), employee, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
     <% end %>
     </tbody>
   </table>
+ <%= link_to t('new'), new_employee_path(@employees)%>
+ <br>
+ <a href="/" class="mt-5">&#8592; <%= t 'Back to Home'%></a>
  
- <a href="/" class="mt-5">&#8592; Back to Home</a>
- <%= link_to 'new', new_employee_path(@employees)%>
 </div>

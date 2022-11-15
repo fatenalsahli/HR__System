@@ -1,17 +1,19 @@
 <div id="<%= dom_id team %>">
   <p>
-    <strong>Name:</strong>
     <%= team.name %>
+    <strong> : <%= t 'activerecord.attributes.team.name'%>  </strong>
+  
   </p>
 
-  <p>
-    <strong>Description:</strong>
+  <p> 
     <%= team.description %>
+    <strong> : <%= t 'activerecord.attributes.team.description'%> </strong>
+   
   </p>
 
   <p>
-    <strong>Leader Id:</strong>
     <%= team.leader_id %>
+     <strong> : <%= t 'activerecord.attributes.team.leader_id'%> </strong>
   </p>
 
 </div>
