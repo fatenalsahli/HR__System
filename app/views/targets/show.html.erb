@@ -3,8 +3,9 @@
 <%= render @target %>
 
 <div>
-  <%= link_to t("activerecord.attributes.target.edittarget"), edit_target_path(@target) %> |
-  <%= link_to  t("activerecord.attributes.target.backtarget") , targets_path %>
+ <%= link_to t("activerecord.attributes.target.edit target"), edit_target_path(@target) , class:"btn btn-dark" %> |
+ <%= link_to  t("activerecord.attributes.target.back to targets") , targets_path  , class:"btn btn-dark" %>
 
-  <%= button_to t('Destroy'), @target, method: :delete %>
 </div>
+<br>
+<%= button_to t('Destroy'), @target, method: :delete , class:"btn btn-dark" %></a>

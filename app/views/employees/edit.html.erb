@@ -1,9 +1,11 @@
-<h1>Editing employee</h1>
+<h1> <%=  t('activerecord.attributes.employee.edit employee') %></h1>
 
 <%= render "form", employee: @employee %>
 
 <br>
 
 <div>
-  <%= link_to t('activerecord.attributes.employee.showemp'), @employee %> |
-<%= link_to t('activerecord.attributes.employee.backemp') , employees_path %></div>
+ <%= link_to t('activerecord.attributes.employee.show employee'), @employee  , class:"btn btn-dark"  %> 
+ <%= link_to t('activerecord.attributes.employee.back to employees') , employees_path , class:"btn btn-dark"   %>
+ 
+ </div>

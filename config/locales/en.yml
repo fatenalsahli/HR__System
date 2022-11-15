@@ -1,3 +1,15 @@
 en:
-  Welcome: "Hello world"
-  
+  Welcome: "Welcome to HR system"
+  Register: "Register"
+  log-in:  "LogIn"
+  sign-out: "Sign out"
+  Change your password: "Change your password"
+  Forgot your password: "Forgot your password"
+  remember me:  "remeber me "
+  Email: "Email"
+  password: "Password"
+  password conformation: "Password conformation"
+  en: "English"
+  ar: "Arabic"
+  Copyright: "Copyright @ 2022 - Sprints - author: Faten alsahli , e-mail:fsalsehli@mrsool.co"
+  Send me reset password instructions: "Send me reset password instructions"  

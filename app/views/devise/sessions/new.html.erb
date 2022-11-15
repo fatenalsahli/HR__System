@@ -2,24 +2,24 @@
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.label t('user.index.Email')  %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.label t('Email') %><br />
+    <%= f.email_field :email , autofocus: true, autocomplete: "Email" %>
   </div>
 
   <div class="field">
-    <%= f.label  t('user.index.Password') %><br />
+    <%= f.label  t('password') %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
 
   <% if devise_mapping.rememberable? %>
     <div class="field">
       <%= f.check_box :remember_me %>
-      <%= f.label t('rememberme') %>
+      <%= f.label t('remember me') %>
     </div>
   <% end %>
-
+<br>
   <div class="actions">
-    <%= f.submit t('log-in') %>
+    <%= f.submit t('log-in') , class:"btn btn-dark" %>
   </div>
 <% end %>
 

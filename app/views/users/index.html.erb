@@ -29,19 +29,19 @@
         <td> </td>
         <td> </td>
         <td> </td>
-  
+ 
+        <td>  <%= link_to  t("activerecord.attributes.user.show user") , (users) , class:"btn btn-dark" %></td>
+        <td>  <%= link_to t("activerecord.attributes.user.edit user"), edit_user_path(users) , class:"btn btn-dark"%> </td>
+        <td>  <%= link_to t('Destroy'), users, :confirm => 'Are you sure?', :method => :delete , class:"btn btn-dark" %></td>
 
-        <td>  <%= link_to t("user.index.show"), (users) %></td>
-        <td><%= link_to t("user.index.edit"), edit_user_path(users)%></td>
-         <td><%= link_to t("new"), new_user_path(users)%></td>
-        <td><%= link_to t('Destroy'), users, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
     <% end %>
     </tbody>
   </table>
  
-  <%= link_to t('new') , new_user_path(@users)%>
+  <%= link_to t('new') , new_user_path(@users) , class:"btn btn-dark"%>
 <br>
- <a href="/" class="mt-5">&#8592; <%= t 'Back to Home'%> </a>
+<br>
+ <a href="/" class="btn btn-dark">&#8592; <%= t 'Back to Home'%> </a>
  <br>
 </div>

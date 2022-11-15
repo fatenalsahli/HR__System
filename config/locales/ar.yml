@@ -6,9 +6,19 @@ ar:
   Register: " تسجيل جديد"
   log-in: "تسجيل دخول"
   sign-out: "تسجيل خروج"
-  Changeyourpassword: "تغيير الرقم السري"
-  Forgotyourpassword: "نسيان الرقم السري"
-  rememberme:  "تذكرني"
+  Change your password: "تغيير الرقم السري"
+  Forgot your password: "نسيان الرقم السري"
+  remember me:  "تذكرني"
+  Email: "الايميل"
+  password: "الرقم السري"
+  password conformation: "تأكيد الرقم السري"
+  Copyright: "حقوق النشر ٢٠٢٢ سبرنت - المؤلف فاتن السهلي "
+  Send me reset password instructions: "ارسال تعليمات استعادة الرقم السري الى الايميل"
+
+
+
+  en: "انجليزية"
+  ar: "العربية"
   user:
     index:
         Users: "المستخدمين"
@@ -16,9 +26,9 @@ ar:
         Email: "الايميل"
         Name: "الاسم"
         Password: "الرقم السري"
-        show: "عرض الموظف"
-        edit: "تعديل بيانات الموظف"
-        back: "العودة الى الموظفين"
+        show user: "عرض الموظف"
+        edit user : "تعديل بيانات الموظف"
+        back to users: "العودة الى الموظفين"
         Passwordc: "تأكيد الرقم السري"
 
   employee:
@@ -31,9 +41,9 @@ ar:
   Team:
     index:
         Teams: "الفرق"
-        editteam: "تعديل بيانات الفريق"
-        showt: "عرض الفريق"
-        backt: "العودة الى الفرق"
+        edit team: "تعديل بيانات الفريق"
+        show team: "عرض الفريق"
+        back to teams: "العودة الى الفرق"
 
 
 
@@ -55,7 +65,7 @@ ar:
 
   home:
     _header:
-        home: "الصفحة الرئيسية "
+        home : "الصفحة الرئيسية "
 
   activerecord:
     attributes:
@@ -72,9 +82,9 @@ ar:
         salary: "الراتب"
         employment_status: "حالة الموظف"
         team_id: " اسم الفريق"
-        editemp: "تعديل بيانات الموظف"
-        backemp: "العودة الى الموظفين"
-        showemp: "عرض بيانات الموظف"
+        edit employee: "تعديل بيانات الموظف"
+        back to employees: "العودة الى الموظفين"
+        show employee: "عرض بيانات الموظف"
 ####################################
       user:
         name: "اسم المستخدم"
@@ -83,10 +93,9 @@ ar:
         profile_picture: "صورة العرض"
         index:
         New user: "مستخدم جديد"
-
-        edituser: "تعديل بيانات المستخدم"
-        backuser: "العودة الى المستخدمين"
-        showuser: "عرض بيانات المستخدم"
+        edit user: "تعديل بيانات المستخدم"
+        back to users: "العودة الى المستخدمين"
+        show user: "عرض بيانات المستخدم"
 
 #####################################
       target:
@@ -97,9 +106,9 @@ ar:
         status: "حالة الهدف"
         team_id: "اسم الفريق"
         targets: "الاهداف"
-        edittarget: "تعديل الهدف"
-        backtarget: "العودة الى الاهداف"
-        targetshow: "عرض الهدف"
+        edit target: "تعديل الهدف"
+        back to targets: "العودة الى الاهداف"
+        show target: "عرض الهدف"
 #####################################
       division:
         name: " اسم القسم"
@@ -110,9 +119,9 @@ ar:
         teams: "اسم الفريق"
         divisions: "الاقسام"
         IDdivision: "رقم القسم"
-        Showdivision: "عرض القسم"
-        Editdivision: "تعديل بيانات القسم"
-        backdivision: "العودة الى الاقسام"
+        Show division: "عرض القسم"
+        Edit division: "تعديل بيانات القسم"
+        back to division: "العودة الى الاقسام"
 
 ##################################
   globals:

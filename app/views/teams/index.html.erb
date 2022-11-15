@@ -32,18 +32,18 @@
         <td> </td>
         <td> </td>
   
-        <td>  <%= link_to t("Team.index.showt"), (teams) %></td>
-         <td><%= link_to t("new"), new_team_path(teams)%></td>
+        <td>   <%= link_to t("Team.index.show team"), (teams) , class:"btn btn-dark" %></td>
+        <td>   <%= link_to t("Team.index.edit team"), edit_team_path(teams) , class:"btn btn-dark" %> </td>
+        <td>   <%=link_to t('Destroy'),  teams, :confirm => 'Are you sure?', :method => :delete , class:"btn btn-dark" %></td>
 
-        <td><%= link_to t("Team.index.editteam"), edit_team_path(teams)%></td>
-        <td><%=link_to t('Destroy'),  teams, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
     <% end %>
     </tbody>
   </table>
  
- <%= link_to t('new') , new_team_path(@teams)%>
+ <%= link_to t('new') , new_team_path(@teams) , class:"btn btn-dark" %>
 <br>
- <a href="/" class="mt-5">&#8592; <%= t 'Back to Home'%> </a>
+<br>
+ <a href="/" class="btn btn-dark">&#8592; <%= t 'Back to Home'%> </a>
  <br>
 </div>
