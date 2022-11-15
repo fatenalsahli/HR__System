@@ -30,8 +30,9 @@
         <td> </td>
         <td> </td>
   
-         <td><%= link_to 'new', new_user_path(users)%></td>
+        <td>  <%= link_to "Show User", (users) %></td>
         <td><%= link_to 'Edit', edit_user_path(users)%></td>
+         <td><%= link_to 'new', new_user_path(users)%></td>
         <td><%= link_to 'Destroy', users, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
     <% end %>
