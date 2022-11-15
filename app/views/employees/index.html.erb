@@ -35,6 +35,7 @@
         <td>    <%= link_to  t('activerecord.attributes.employee.show employee'), (employee) , class:"btn btn-dark" %></td></a>
         <td>  <%= link_to t('activerecord.attributes.employee.edit employee') , edit_employee_path(employee) , class:"btn btn-dark"%></td>
         <td>  <%= link_to t('Destroy'), employee, :confirm => 'Are you sure?', :method => :delete , class:"btn btn-dark"  %></td>
+
       </tr>
     <% end %>
     </tbody>

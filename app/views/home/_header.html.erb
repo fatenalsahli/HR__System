@@ -19,22 +19,27 @@
 
 
         <li class="nav-item">
-      
+
+        <%= link_to t('user.index.Users') , users_path, class:"nav-link"%>
         </li>
 
          <li class="nav-item">
-     
+        <%= link_to t('employee.index.Employees'), employees_path, class:"nav-link"%>
         </li>
         <li class="nav-item">
-        </li>
-
-        <li class="nav-item">
+        <%= link_to t('Team.index.Teams'), teams_path, class:"nav-link"%>
         </li>
 
         <li class="nav-item">
+        <%= link_to  t("activerecord.attributes.target.targets"), targets_path, class:"nav-link"%>
         </li>
 
         <li class="nav-item">
+        <%= link_to t("activerecord.attributes.division.divisions"), divisions_path, class:"nav-link"%>
+        </li>
+
+        <li class="nav-item">
+        <%= link_to t("hoem.index.Teams details") ,  hoem_index_path, class:"nav-link"%>
         </li>
        
       </ul>
