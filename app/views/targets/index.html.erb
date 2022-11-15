@@ -37,6 +37,7 @@
         <td> </td>
   
         <td>  <%= link_to t("activerecord.attributes.target.targetshow") , (targets) %></td>
+         <td><%= link_to t("new"), new_target_path(targets)%></td>
         <td><%= link_to t("activerecord.attributes.target.edittarget"), edit_target_path(targets)%></td>
         <td><%= link_to t('Destroy'), targets, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>

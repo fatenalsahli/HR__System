@@ -5,8 +5,9 @@
 <%= render @user %>
 
 <div>
-<%= link_to t("activerecord.attributes.user.edituser") , @user %> |
-<%= link_to t("activerecord.attributes.user.backuser") , users_path %>
+
+ <%= link_to t("user.index.edit"), @user %> |
+  <%= link_to t("user.index.back"), users_path %>
 <br>
   <%= button_to t('Destroy'), @user, method: :delete %>
   <br>

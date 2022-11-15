@@ -28,6 +28,7 @@
 
 
         <td>  <%= link_to t("activerecord.attributes.division.Showdivision")  , (division) %></td>
+        <td><%= link_to t('new'), new_division_path(division)%></td>
         <td><%= link_to t("activerecord.attributes.division.Editdivision")  , edit_division_path(division)%></td>
         <td><%= link_to t('Destroy'), division, :confirm => 'Are you sure?', :method => :delete %></td>
 
